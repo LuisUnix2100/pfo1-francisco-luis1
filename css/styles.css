@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #f4f4f9;
     color: #333;
+    /* CORRECCIÓN: Agregamos un espacio inferior para que el footer fijo no tape el contenido */
+    padding-bottom: 60px;
 }
 
 header {
@@ -24,7 +26,7 @@ footer {
     padding: 1rem;
     background-color: #2c3e50;
     color: white;
-    position: fixed;
-    bottom: 0;
+    /* CORRECCIÓN: Quitamos 'position: fixed' y 'bottom: 0' para que el footer fluya 
+       naturalmente al final del contenido y no tape el campo de correo y nombre */
     width: 100%;
 }
