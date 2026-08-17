@@ -3,16 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Luis Bronzi | Portafolio Front End</title>
-    <!-- Google Fonts: Orbitron y Inter para estilo futurista -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Francisco Luis Bronzi | Portafolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- HEADER Y NAV -->
     <header>
         <div class="logo">F.L.B.</div>
         <nav>
@@ -25,80 +21,66 @@
         </nav>
     </header>
 
-    <!-- MAIN -->
     <main id="inicio">
-        
-        <!-- Sección Presentación -->
         <section class="hero">
             <div class="hero-content">
                 <h1>Francisco Luis Bronzi</h1>
                 <h2>Desarrollador Front End Junior</h2>
-                <p>Este proyecto es mi portafolio personal creado para la materia Front End. Una interfaz web diseñada para presentar quién soy, cuáles son mis habilidades tecnológicas y cómo pueden contactarme.</p>
-                <a href="https://github.com" target="_blank" class="btn-neon">Explorar mi GitHub</a>
+                <p>Portafolio personal desarrollado para la materia Front End. Presentación de perfil, habilidades y proyectos tecnológicos.</p>
+                <a href="https://github.com" target="_blank" class="btn-neon">Mi GitHub</a>
             </div>
         </section>
 
-        <!-- Sección Proyectos -->
         <section id="proyectos" class="projects-section">
             <h2>Mis Proyectos</h2>
-            <p class="section-subtitle">Puedes ver mis trabajos y repositorio directamente en mi perfil: <a href="https://github.com" target="_blank" class="link-highlight">Mi GitHub</a></p>
-            
             <div class="grid-container">
                 <article class="card">
                     <h3>Gestión Consorcio</h3>
-                    <p>Aplicación de escritorio en C# con base de datos MySQL orientada al control y administración.</p>
+                    <p>Aplicación de escritorio en C# con base de datos MySQL.</p>
                 </article>
                 <article class="card">
                     <h3>Clínica SePrice</h3>
-                    <p>Sistema de gestión clínica, documentación de casos de uso y planificación ágil de sprints.</p>
+                    <p>Sistema de gestión clínica y planificación ágil de sprints.</p>
                 </article>
                 <article class="card">
                     <h3>App Club Deportivo</h3>
-                    <p>Diseño de interfaces móviles y estructura lógica desarrollada con Kotlin y SQLite.</p>
+                    <p>Estructura lógica y diseño desarrollada con Kotlin y SQLite.</p>
                 </article>
             </div>
         </section>
 
-        <!-- Sección Habilidades -->
         <section id="habilidades" class="skills-section">
             <h2>Mis Habilidades</h2>
             <div class="skills-grid">
-                <div class="skill-card"><span>HTML5 Semántico</span></div>
-                <div class="skill-card"><span>CSS3 / Flexbox / Grid</span></div>
-                <div class="skill-card"><span>Git & GitHub</span></div>
-                <div class="skill-card"><span>C# & MySQL</span></div>
-                <div class="skill-card"><span>Kotlin & Android</span></div>
+                <div class="skill-card">HTML5 & CSS3</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">C# & MySQL</div>
+                <div class="skill-card">Kotlin</div>
             </div>
         </section>
 
-        <!-- Sección Contacto -->
         <section id="contacto" class="contact-section">
             <h2>Contacto</h2>
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre..." required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
                 </div>
-
                 <div class="form-group">
                     <label for="correo">Correo:</label>
-                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
                 </div>
-
                 <div class="form-group">
                     <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Tu mensaje..." required></textarea>
                 </div>
-
-                <button type="submit" class="btn-neon">Enviar Mensaje</button>
+                <button type="submit" class="btn-neon">Enviar</button>
             </form>
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2026 Francisco Luis Bronzi. Desarrollado con estética futurista para Front End.</p>
+        <p>&copy; 2026 Francisco Luis Bronzi</p>
     </footer>
 
 </body>
