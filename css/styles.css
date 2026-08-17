@@ -1,238 +1,212 @@
 :root {
-    /* --- PALETA DE COLORES: Futurista Oscura y Corporativa --- */
-    --bg-body: #101218;         /* Fondo principal: Gris azulado muy oscuro y profundo */
-    --bg-card: #1a1d29;         /* Fondo tarjetas y formulario: Un tono apenas más claro */
-    --text-main: #e0e6ed;       /* Texto principal: Gris muy claro, casi blanco (suave) */
-    --text-muted: #94a3b8;      /* Texto secundario: Gris azulado medio (para descripciones) */
-
-    /* --- Acentos: Azul Metálico Profesional (Reemplazo del Neón Cian) --- */
-    --accent-color: #007bff;    /* Color principal para botones, enlaces y títulos destacados */
-    --accent-hover: #0056b3;    /* Color para el efecto hover de botones y enlaces */
-    --border-color: #2d3748;    /* Color para bordes y líneas divisorias sutiles */
+    --bg-primary: #05050a;
+    --bg-secondary: #0b0c16;
+    --accent-cyan: #00f0ff;
+    --accent-purple: #7000ff;
+    --text-main: #e0e6ed;
+    --text-muted: #94a3b8;
+    --card-bg: rgba(18, 20, 38, 0.7);
+    --border-glow: rgba(0, 240, 255, 0.3);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: var(--bg-body);
+    background-color: var(--bg-primary);
     color: var(--text-main);
-    /* --- TIPOGRAFÍA: Modernas y Técnicas, pero menos "espaciales" --- */
-    font-family: 'Inter', sans-serif; /* Fuente limpia y legible para el cuerpo */
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
 
-/* Encabezado */
 header {
-    background-color: var(--bg-body); /* Fondo sólido y sobrio */
-    border-bottom: 1px solid var(--border-color);
+    background: rgba(5, 5, 10, 0.9);
+    border-bottom: 1px solid var(--border-glow);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 8%;
-    position: sticky; /* Mantiene el menú arriba al scrollear */
+    padding: 1.2rem 5%;
+    position: sticky;
     top: 0;
     z-index: 100;
 }
 
 .logo {
-    /* --- Logo: Se mantiene la fuente Orbitron, pero en Azul Metálico --- */
+    color: var(--accent-cyan);
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 900;
-    color: var(--accent-color);
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 nav a {
+    color: var(--text-main);
     text-decoration: none;
     font-weight: 600;
-    color: var(--text-main);
-    font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--accent-color); /* Color de acento en hover */
+    color: var(--accent-cyan);
+    text-shadow: 0 0 8px var(--accent-cyan);
 }
 
-/* Secciones Generales */
 section {
-    padding: 5rem 8%;
+    padding: 4rem 10%;
 }
 
-/* Sección Hero (Presentación) */
 .hero {
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
-.hero-content {
-    max-width: 700px;
-}
-
 .hero h1 {
-    font-family: 'Orbitron', sans-serif; /* Título con fuente técnica */
-    font-size: 3.5rem;
-    color: #ffffff;
-    margin-bottom: 1rem;
-    line-height: 1.1;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
 }
 
 .hero h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem;
-    color: var(--accent-color); /* Subtítulo en Azul Metálico */
-    margin-bottom: 1.5rem;
-    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.2rem;
 }
 
 .hero p {
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
     color: var(--text-muted);
-    font-size: 1.1rem;
-    margin-bottom: 2.5rem;
 }
 
-/* Botones */
 .btn-neon {
-    /* --- Botón: Estilo Sólido y Profesional (No Neón) --- */
     display: inline-block;
-    background-color: var(--accent-color);
-    color: #ffffff;
-    padding: 0.9rem 2rem;
+    background: transparent;
+    color: var(--accent-cyan);
+    border: 2px solid var(--accent-cyan);
+    padding: 0.7rem 1.8rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     text-decoration: none;
     border-radius: 4px;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    border: none;
-    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+    transition: all 0.4s ease;
 }
 
 .btn-neon:hover {
-    background-color: var(--accent-hover); /* Hover más oscuro */
-    transform: translateY(-2px); /* Pequeño efecto de elevación */
+    background: var(--accent-cyan);
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px var(--accent-cyan);
+    transform: translateY(-2px);
 }
 
-/* Títulos de Sección */
-h2.section-title {
+h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #fff;
     text-align: center;
-    color: #ffffff;
-    margin-bottom: 3rem;
 }
 
-/* Tarjetas de Proyectos */
-.projects-section .grid-container {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
-.projects-section .card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    padding: 2.5rem;
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-glow);
+    padding: 1.8rem;
     border-radius: 8px;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-.projects-section .card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color); /* Borde se ilumina sutilmente en azul */
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
 }
 
-.projects-section .card h3 {
-    color: var(--accent-color); /* Título proyecto en Azul Metálico */
+.card h3 {
+    color: var(--accent-cyan);
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
-.projects-section .card p {
-    color: var(--text-muted);
-    font-size: 1rem;
-}
-
-/* Habilidades */
-.skills-section .skills-grid {
+.skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
-.skills-section .skill-card {
-    background-color: var(--bg-card);
-    border: 1px solid var(--border-color);
-    padding: 1rem 2rem;
-    border-radius: 50px; /* Pastillas redondeadas */
+.skill-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(112, 0, 255, 0.4);
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
     font-family: 'Orbitron', sans-serif;
-    font-size: 0.95rem;
-    color: var(--text-main);
+    font-size: 0.9rem;
 }
 
-/* Contacto */
-.contact-section .contact-form {
-    max-width: 600px;
+.contact-form {
+    max-width: 500px;
     margin: 0 auto;
-    background-color: var(--bg-card);
-    padding: 3rem;
+    background: var(--card-bg);
+    padding: 2rem;
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-glow);
 }
 
-.contact-section .form-group {
-    margin-bottom: 1.5rem;
+.form-group {
+    margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
 }
 
-.contact-section .form-group label {
-    margin-bottom: 0.5rem;
+.form-group label {
+    margin-bottom: 0.4rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: var(--accent-cyan);
 }
 
-.contact-section .form-group input,
-.contact-section .form-group textarea {
-    background-color: #13161e; /* Fondo campos formulario */
-    border: 1px solid var(--border-color);
-    padding: 1rem;
-    color: #ffffff;
+.form-group input,
+.form-group textarea {
+    background: rgba(5, 5, 10, 0.8);
+    border: 1px solid #2a2d45;
+    padding: 0.7rem;
+    color: #fff;
     border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-}
-
-.contact-section .form-group input:focus,
-.contact-section .form-group textarea:focus {
     outline: none;
-    border-color: var(--accent-color); /* Borde campo focus en Azul Metálico */
 }
 
-/* Footer */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+}
+
 footer {
-    background-color: var(--bg-body);
-    border-top: 1px solid var(--border-color);
-    padding: 2rem;
     text-align: center;
+    padding: 1.5rem;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-glow);
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
