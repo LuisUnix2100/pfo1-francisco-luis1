@@ -71,9 +71,9 @@ nav a:hover {
     text-shadow: 0 0 8px var(--accent-cyan);
 }
 
-/* Secciones Generales */
+/* Secciones Generales (Espaciado optimizado para evitar cortes) */
 section {
-    padding: 6rem 8%;
+    padding: 4rem 8%;
 }
 
 /* Sección Hero (Presentación) */
@@ -219,7 +219,7 @@ h2.section-title {
     font-size: 2.5rem;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 0 0 10px var(--accent-cyan);
