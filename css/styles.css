@@ -76,7 +76,7 @@ section {
     padding: 6rem 8%;
 }
 
-/* Sección Hero (Presentación) */
+/* Sección Hero (Presentación con foto de perfil integrada) */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -94,7 +94,11 @@ section {
 }
 
 .hero-content {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: left;
+    max-width: 950px;
     border: 1px solid var(--border-color);
     padding: 4rem;
     background-color: var(--bg-card);
@@ -102,33 +106,51 @@ section {
     box-shadow: 0 0 30px var(--accent-cyan-dim), inset 0 0 15px var(--accent-cyan-dim);
 }
 
-.hero h1 {
+.hero-avatar-container {
+    flex-shrink: 0;
+}
+
+.hero-avatar {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent-cyan);
+    box-shadow: 0 0 20px var(--accent-cyan), inset 0 0 15px var(--accent-cyan-dim);
+    filter: grayscale(20%) contrast(1.05) brightness(0.95);
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
     line-height: 1.1;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-shadow: 0 0 15px var(--accent-cyan);
+    text-align: left;
 }
 
-.hero h2 {
+.hero-text h2 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--accent-cyan);
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     font-weight: 500;
     letter-spacing: 1px;
+    text-align: left;
 }
 
-.hero p {
+.hero-text p {
     color: var(--text-muted);
-    font-size: 1.2rem;
-    margin-bottom: 3rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    text-align: left;
 }
 
 /* Sección "Sobre mí" */
@@ -226,7 +248,7 @@ h2.section-title {
     text-shadow: 0 0 10px var(--accent-cyan);
 }
 
-/* Tarjetas de Proyectos - Flexbox con ancho controlado para centrar la última tarjeta automáticamente */
+/* Tarjetas de Proyectos - Flexbox con última fila centrada automáticamente */
 .projects-section .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -390,4 +412,20 @@ h2.section-title {
 
 .footer-right a:hover {
     color: var(--accent-cyan);
+}
+
+/* Adaptabilidad para dispositivos móviles */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+    }
+    .hero-text h1, .hero-text h2, .hero-text p {
+        text-align: center;
+    }
+    .hero-avatar {
+        width: 140px;
+        height: 140px;
+    }
 }
