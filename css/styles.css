@@ -73,7 +73,7 @@ nav a:hover {
 
 /* Secciones Generales */
 section {
-    padding: 5rem 8%;
+    padding: 6rem 8%;
 }
 
 /* Sección Hero (Presentación) */
@@ -226,7 +226,7 @@ h2.section-title {
     text-shadow: 0 0 10px var(--accent-cyan);
 }
 
-/* Tarjetas de Proyectos (Ajustadas para que entren de a 3 perfectamente) */
+/* Tarjetas de Proyectos */
 .projects-section .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -262,18 +262,23 @@ h2.section-title {
     line-height: 1.6;
 }
 
-/* Habilidades */
+/* Habilidades - Espaciado ampliado para separar las líneas de tarjetas y empujar Contacto */
+.skills-section {
+    padding-bottom: 12rem;
+}
+
 .skills-section .skills-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2.5rem;
+    margin-top: 3.5rem;
 }
 
 .skills-section .skill-card {
     background-color: var(--bg-card);
     border: 1px solid var(--border-color);
-    padding: 1rem 2rem;
+    padding: 1.2rem 2.2rem;
     border-radius: 50px;
     font-family: 'Orbitron', sans-serif;
     font-size: 0.95rem;
@@ -288,7 +293,7 @@ h2.section-title {
     box-shadow: 0 0 15px var(--accent-cyan);
 }
 
-/* Contacto (Cuadro optimizado) */
+/* Contacto */
 .contact-section .contact-form {
     max-width: 550px;
     margin: 0 auto;
