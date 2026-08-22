@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F.L.B. - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>F.L.B. - Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- Encabezado / Navbar -->
+    <!-- Encabezado / Navegación -->
     <header>
         <div class="logo">F.L.B.</div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -22,103 +22,106 @@
         </nav>
     </header>
 
-    <!-- Sección Inicio / Hero -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>F. L. Bronzi</h1>
-            <h2>Desarrollador de Software & Infraestructura</h2>
-            <p>Construyendo soluciones tecnológicas robustas, eficientes y escalables.</p>
-            <a href="#proyectos" class="btn-neon">Ver Proyectos</a>
-        </div>
-    </section>
+    <main>
+        <!-- Sección Hero (Presentación principal) -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>Francisco Luis Bronzi</h1>
+                <h2>Desarrollador de Software & Web</h2>
+                <p>Portafolio personal de mi perfil, habilidades y proyectos tecnológicos.</p>
+                <a href="https://github.com/LuisUnix2100" target="_blank" class="btn-neon">Mi GitHub</a>
+            </div>
+        </section>
 
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="about-section">
-        <div class="about-container">
-            <div class="about-img-box">
-                <!-- Recordá colocar aquí la ruta a tu foto personal -->
-                <img src="tu-foto.jpg" alt="Foto de perfil">
+<!-- Nueva Sección "Sobre mí" -->
+        <section id="sobre-mi" class="about-section">
+            <div class="about-container">
+                <div class="about-img-box">
+                    <img src="img/futurista.jpg" alt="Representación visual de administración de sistemas y tecnología futurista">
+                </div>
+                <div class="about-text-box">
+                    <h2>Sobre mí</h2>
+                    <h3>Arquitectura, sistemas y desarrollo web</h3>
+                    <p>Soy desarrollador de software con una sólida trayectoria en administración de sistemas, entornos Unix, bases de datos Oracle e instalación de servidores.</p>
+                    <p>Disfruto combinar mi experiencia técnica de backend y sistemas con las nuevas tecnologías web para crear soluciones robustas, limpias y eficientes.</p>
+                </div>
             </div>
-            <div class="about-text-box">
-                <h2>Sobre Mí</h2>
-                <h3>Perfil Técnico y Profesional</h3>
-                <p>Estudiante avanzado en el área de desarrollo de software y sistemas, con experiencia en el diseño de aplicaciones de escritorio y móviles, así como en la implementación de infraestructura de redes y servidores.</p>
-                <p>Apasionado por la tecnología, la resolución de problemas lógicos y la mejora continua en cada proyecto que encaro.</p>
+        </section>
+       
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="projects-section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <h3>Gestión Consorcio</h3>
+                    <p>Aplicación de escritorio en C# con base de datos MySQL.</p>
+                </div>
+                <div class="card">
+                    <h3>Clínica SePrice</h3>
+                    <p>Sistema de gestión clínica y planificación ágil de sprints.</p>
+                </div>
+                <div class="card">
+                    <h3>App Club Deportivo</h3>
+                    <p>Estructura lógica y diseño desarrollada con Kotlin y SQLite.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="projects-section">
-        <h2 class="section-title">Mis Proyectos</h2>
-        <div class="grid-container">
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <h3>Gestión Consorcio</h3>
-                <p>Aplicación de escritorio en C# con base de datos MySQL.</p>
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="skills-section">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5 & CSS3</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">C# & MySQL</div>
+                <div class="skill-card">Kotlin</div>
+                <div class="skill-card">Unix & Shell Script</Script></div>
             </div>
-            <!-- Tarjeta 2 -->
-            <div class="card">
-                <h3>Clínica SePrice</h3>
-                <p>Sistema de gestión clínica y planificación ágil de sprints.</p>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="card">
-                <h3>App Club Deportivo</h3>
-                <p>Estructura lógica y diseño desarrollada con Kotlin y SQLite.</p>
-            </div>
-            <!-- Tarjeta 4 (Nueva) -->
-            <div class="card">
-                <h3>Instalación de Servidores</h3>
-                <p>Montaje de infraestructura de servidores y cableado estructurado categoría 5.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Habilidades -->
-    <section id="habilidades" class="skills-section">
-        <h2 class="section-title">Mis Habilidades</h2>
-        <div class="skills-grid">
-            <div class="skill-card">HTML5 & CSS3</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">C# & MySQL</div>
-            <div class="skill-card">Kotlin</div>
-            <div class="skill-card">Unix & Shell Script</div>
-        </div>
-    </section>
-
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact-section">
-        <h2 class="section-title">Contacto</h2>
-        <div class="contact-form">
-            <form action="#" method="POST">
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2 class="section-title">Contacto</h2>
+            <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre y Apellido *</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Perez" required>
                 </div>
+                
                 <div class="form-group">
-                    <label for="email">Correo Electrónico *</label>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="juanperez@ejemplo.com" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo">
+                        <option value="laboral">Oportunidad laboral</option>
+                        <option value="tecnica">Consulta técnica</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribí aquí los detalles de tu consulta..." required></textarea>
                 </div>
-                <button type="submit" class="btn-neon" style="width: 100%; text-align: center;">Enviar Mensaje</button>
+                
+                <button type="submit" class="btn-neon">Enviar mensaje</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer Moderno -->
+   <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-left">
-            <span class="footer-logo">F.L.B.</span>
-            <span>&copy; 2026 - Todos los derechos reservados.</span>
+            <span class="footer-logo">&lt;F.L.B./&gt;</span>
+            <p>&copy; 2026 Francisco Luis Bronzi. Todos los derechos reservados.</p>
         </div>
         <div class="footer-right">
-            <a href="#inicio">Inicio</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <a href="https://github.com/LuisUnix2100" target="_blank">GitHub</a>
+            <a href="#inicio" class="volver-arriba">Volver arriba &uarr;</a>
         </div>
     </footer>
 
