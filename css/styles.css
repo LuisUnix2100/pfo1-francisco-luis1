@@ -131,7 +131,7 @@ section {
     margin-right: auto;
 }
 
-/* Sección "Sobre mí" (Con Flexbox para imagen y texto lado a lado) */
+/* Sección "Sobre mí" */
 .about-section {
     background-color: var(--bg-body);
 }
@@ -203,6 +203,7 @@ section {
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
     box-shadow: 0 0 10px var(--accent-cyan);
+    cursor: pointer;
 }
 
 .btn-neon:hover {
@@ -313,6 +314,7 @@ h2.section-title {
 }
 
 .contact-section .form-group input,
+.contact-section .form-group select,
 .contact-section .form-group textarea {
     background-color: #0b0d12;
     border: 1px solid var(--border-color);
@@ -322,9 +324,15 @@ h2.section-title {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+.contact-section .form-group select {
+    cursor: pointer;
 }
 
 .contact-section .form-group input:focus,
+.contact-section .form-group select:focus,
 .contact-section .form-group textarea:focus {
     outline: none;
     border-color: var(--accent-cyan);

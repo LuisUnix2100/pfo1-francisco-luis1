@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Luis Bronzi | Portafolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>F.L.B. - Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+    <!-- Encabezado / Navegación -->
     <header>
         <div class="logo">F.L.B.</div>
         <nav>
@@ -23,17 +23,17 @@
     </header>
 
     <main>
-        <!-- Sección de Inicio / Hero -->
+        <!-- Sección Hero (Presentación principal) -->
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <h1>Francisco Luis Bronzi</h1>
                 <h2>Desarrollador de Software & Web</h2>
                 <p>Portafolio personal de mi perfil, habilidades y proyectos tecnológicos.</p>
-                <a href="https://github.com/LuisUnix2100" target="_blank" class="btn-neon">Mi GitHub</a>
+                <a href="https://github.com/LuisUnix" target="_blank" class="btn-neon">Mi GitHub</a>
             </div>
         </section>
 
-        <!-- Nueva Sección "Sobre mí" con la imagen y su alt -->
+        <!-- Nueva Sección "Sobre mí" -->
         <section id="sobre-mi" class="about-section">
             <div class="about-container">
                 <div class="about-img-box">
@@ -52,18 +52,18 @@
         <section id="proyectos" class="projects-section">
             <h2 class="section-title">Mis Proyectos</h2>
             <div class="grid-container">
-                <article class="card">
+                <div class="card">
                     <h3>Gestión Consorcio</h3>
                     <p>Aplicación de escritorio en C# con base de datos MySQL.</p>
-                </article>
-                <article class="card">
+                </div>
+                <div class="card">
                     <h3>Clínica SePrice</h3>
                     <p>Sistema de gestión clínica y planificación ágil de sprints.</p>
-                </article>
-                <article class="card">
+                </div>
+                <div class="card">
                     <h3>App Club Deportivo</h3>
                     <p>Estructura lógica y diseño desarrollada con Kotlin y SQLite.</p>
-                </article>
+                </div>
             </div>
         </section>
 
@@ -85,21 +85,35 @@
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre y Apellido *</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Perez" required>
                 </div>
+                
                 <div class="form-group">
                     <label for="correo">Correo Electrónico *</label>
-                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                    <input type="email" id="correo" name="correo" placeholder="juanperez@ejemplo.com" required>
                 </div>
+
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo">
+                        <option value="laboral">Oportunidad laboral</option>
+                        <option value="tecnica">Consulta técnica</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
                 <div class="form-group">
                     <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Tu mensaje..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribí aquí los detalles de tu consulta..." required></textarea>
                 </div>
+                
                 <button type="submit" class="btn-neon">Enviar mensaje</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Francisco Luis Bronzi. Todos los derechos reservados.</p>
     </footer>
