@@ -93,12 +93,13 @@ section {
     background-position: -1px -1px, -1px -1px, -1px -1px;
 }
 
-.hero-content {
+.hero-content-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 3rem;
-    text-align: left;
-    max-width: 950px;
+    max-width: 1100px;
+    margin: 0 auto;
     border: 1px solid var(--border-color);
     padding: 4rem;
     background-color: var(--bg-card);
@@ -106,29 +107,31 @@ section {
     box-shadow: 0 0 30px var(--accent-cyan-dim), inset 0 0 15px var(--accent-cyan-dim);
 }
 
-.hero-avatar-container {
+.hero-avatar-box {
     flex-shrink: 0;
 }
 
 .hero-avatar {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid var(--accent-cyan);
-    box-shadow: 0 0 20px var(--accent-cyan), inset 0 0 15px var(--accent-cyan-dim);
-    filter: grayscale(20%) contrast(1.05) brightness(0.95);
+    border: 3px solid var(--accent-cyan);
+    box-shadow: 0 0 20px var(--accent-cyan), inset 0 0 10px var(--accent-cyan-dim);
+    display: block;
+    margin: 0 auto;
 }
 
-.hero-text {
+.hero-text-box {
     flex: 1;
+    text-align: left;
 }
 
-.hero-text h1 {
+.hero-text-box h1 {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.8rem;
     color: #ffffff;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -136,7 +139,14 @@ section {
     text-align: left;
 }
 
-.hero-text h2 {
+/* Clase específica para centrar solo la segunda línea ("Bronzi") */
+.hero-text-box h1.bronzi-title {
+    text-align: center;
+    margin-top: -0.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero-text-box h2 {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     color: var(--accent-cyan);
@@ -146,11 +156,12 @@ section {
     text-align: left;
 }
 
-.hero-text p {
+.hero-text-box p {
     color: var(--text-muted);
     font-size: 1.1rem;
     margin-bottom: 2rem;
     text-align: left;
+    margin-left: 0;
 }
 
 /* Sección "Sobre mí" */
@@ -248,7 +259,7 @@ h2.section-title {
     text-shadow: 0 0 10px var(--accent-cyan);
 }
 
-/* Tarjetas de Proyectos - Flexbox con última fila centrada automáticamente */
+/* Tarjetas de Proyectos */
 .projects-section .grid-container {
     display: flex;
     flex-wrap: wrap;
@@ -289,7 +300,7 @@ h2.section-title {
     line-height: 1.6;
 }
 
-/* Habilidades - Espaciado ampliado */
+/* Habilidades */
 .skills-section {
     padding-bottom: 12rem;
 }
@@ -416,16 +427,24 @@ h2.section-title {
 
 /* Adaptabilidad para dispositivos móviles */
 @media (max-width: 768px) {
-    .hero-content {
+    .hero-content-wrapper {
         flex-direction: column;
         text-align: center;
         padding: 2.5rem 1.5rem;
     }
-    .hero-text h1, .hero-text h2, .hero-text p {
+    .hero-text-box {
         text-align: center;
     }
+    .hero-text-box h1, 
+    .hero-text-box h1.bronzi-title, 
+    .hero-text-box h2, 
+    .hero-text-box p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .hero-avatar {
-        width: 140px;
-        height: 140px;
+        width: 130px;
+        height: 130px;
     }
 }
