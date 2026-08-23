@@ -465,22 +465,20 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* Forzar que el menú en celular se acomode en filas centradas */
+/* Menú adaptativo en celular usando menos espacio entre títulos */
 @media (max-width: 768px) {
     header {
-        display: flex;
+        display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
-        justify-content: center !important;
-        padding: 10px !important;
+        padding: 8px !important;
     }
 
     .nav-links {
         display: flex !important;
-        flex-direction: row !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
-        gap: 8px 12px !important;
+        gap: 4px 8px !important; /* Espacio súper ajustado entre los títulos */
         width: 100% !important;
         margin: 5px 0 0 0 !important;
         padding: 0 !important;
@@ -493,7 +491,7 @@ img {
     }
 
     .nav-links a {
-        font-size: 0.8rem !important;
-        padding: 4px 8px !important;
+        font-size: 0.9rem !important; /* Mantiene un tamaño de letra cómodo y legible */
+        padding: 2px 5px !important;
     }
 }
