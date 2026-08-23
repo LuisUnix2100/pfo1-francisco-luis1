@@ -6,6 +6,7 @@ Este proyecto es mi portafolio personal creado para la materia Front End. Es una
 - **HTML5**: Estructura semántica del sitio.
 - **CSS3**: Estilos personalizados, diseño adaptativo y efectos visuales.
 - **JavaScript**: Interactividad de la interfaz.
+- ** Visual Studio Code (VSC): Entorno de desarrollo para la escritura y edición de código.
 
 ##  Decisiones de Diseño y Desarrollo
 - **Enfoque Visual**: Se optó por una estética moderna de tipo "terminal/tecnológica" con tonos oscuros y detalles en colores destacados para reflejar el perfil de desarrollo de software.
