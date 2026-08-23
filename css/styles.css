@@ -465,25 +465,35 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* Menú adaptativo optimizado para celulares */
+/* Forzar que el menú en celular se acomode en filas centradas */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        padding: 0.8rem 0.5rem;
-        text-align: center;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px !important;
     }
 
     .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem 1rem; /* Espacio vertical y horizontal */
-        padding: 0;
-        margin-top: 0.5rem;
-        width: 100%;
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 12px !important;
+        width: 100% !important;
+        margin: 5px 0 0 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    .nav-links li {
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .nav-links a {
-        font-size: 0.85rem; /* Achica un poquito el texto para que entren todos */
+        font-size: 0.8rem !important;
+        padding: 4px 8px !important;
     }
 }
