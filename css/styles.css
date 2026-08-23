@@ -461,3 +461,7 @@ h2.section-title {
         height: 140px;
     }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
