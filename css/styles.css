@@ -465,3 +465,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Ajuste del menú de navegación para celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+
+    .nav-links li {
+        display: inline-block;
+    }
+}
