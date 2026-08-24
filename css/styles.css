@@ -561,3 +561,6 @@ nav a:hover {
         margin-bottom: 2.5rem;
     }
 }
+nav a {
+    font-size: 1.15rem !important;
+}
