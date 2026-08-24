@@ -69,7 +69,7 @@ nav a {
     text-decoration: none;
     color: var(--text-muted);
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 1.15rem;
     transition: color 0.3s ease;
 }
 
