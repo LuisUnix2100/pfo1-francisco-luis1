@@ -395,12 +395,9 @@ nav a:hover {
     border-color: var(--accent-cyan);
     box-shadow: 0 0 12px var(--accent-cyan-dim);
 }
+
 .contact-form .btn-neon {
     width: 100%;
-    margin-top: 0.5rem;
-}
-.contact-form .btn-neon {
-    align-self: flex-start;
     margin-top: 0.5rem;
 }
 
