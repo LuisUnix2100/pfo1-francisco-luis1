@@ -1,18 +1,18 @@
+/* --- PALETA DE COLORES: Futurista Digital y Datos --- */
 :root {
-    /* --- PALETA DE COLORES: Futurista Digital y Datos --- */
-    --bg-body: #0b0d12;        /* Fondo principal: Gris espacial muy profundo */
-    --bg-card: #11141c;        /* Fondo tarjetas y formulario */
-    --accent-cyan: #00f0ff;    /* Color neón principal: Cian brillante */
+    --bg-body: #0b0d12;         /* Fondo principal: Gris espacial muy profundo */
+    --bg-card: #11141c;         /* Fondo tarjetas y formulario */
+    --accent-cyan: #00f0ff;     /* Color neón principal: Cian brillante */
     --accent-cyan-dim: rgba(0, 240, 255, 0.1); /* Cian muy tenue para sombras/brillos */
     
-    --text-main: #e0e6ed;      /* Texto principal */
+    --text-main: #e0e6ed;       /* Texto principal */
     --text-muted: #94a3b8;     /* Texto secundario */
     --border-color: #252b3a;   /* Color para bordes */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;600;700&display=swap');
 
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +23,11 @@ body {
     color: var(--text-main);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Encabezado */
@@ -49,13 +54,13 @@ header {
     text-shadow: 0 0 10px var(--accent-cyan);
 }
 
-nav ul {
+nav ul, .nav-links {
     display: flex;
     list-style: none;
     gap: 3rem;
 }
 
-nav a {
+nav a, .nav-links a {
     text-decoration: none;
     font-weight: 600;
     color: var(--text-main);
@@ -66,7 +71,7 @@ nav a {
     letter-spacing: 0.5px;
 }
 
-nav a:hover {
+nav a:hover, .nav-links a:hover {
     color: var(--accent-cyan);
     text-shadow: 0 0 8px var(--accent-cyan);
 }
@@ -115,7 +120,6 @@ section {
     align-items: center;
 }
 
-/* Ajuste perfecto para la foto y el enfoque en el rostro */
 .hero-avatar {
     width: 170px;
     height: 170px;
@@ -439,15 +443,46 @@ h2.section-title {
 
 /* Adaptabilidad para dispositivos móviles */
 @media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+
+    nav ul, .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 12px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav ul li, .nav-links li {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a, .nav-links a {
+        font-size: 0.85rem;
+        padding: 2px 6px;
+    }
+
     .hero-content-wrapper {
         flex-direction: column;
         text-align: center;
         padding: 2.5rem 1.5rem;
         gap: 2rem;
     }
+
     .hero-text-box {
         text-align: center;
     }
+
     .hero-text-box h1, 
     .hero-text-box h1.bronzi-title, 
     .hero-text-box h2, 
@@ -456,42 +491,14 @@ h2.section-title {
         margin-left: auto;
         margin-right: auto;
     }
+
     .hero-avatar {
         width: 140px;
         height: 140px;
     }
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
-/* Menú adaptativo en celular usando menos espacio entre títulos */
-@media (max-width: 768px) {
-    header {
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center !important;
-        padding: 8px !important;
-    }
 
-    .nav-links {
-        display: flex !important;
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        gap: 4px 8px !important; /* Espacio súper ajustado entre los títulos */
-        width: 100% !important;
-        margin: 5px 0 0 0 !important;
-        padding: 0 !important;
-        list-style: none !important;
-    }
-
-    .nav-links li {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .nav-links a {
-        font-size: 0.9rem !important; /* Mantiene un tamaño de letra cómodo y legible */
-        padding: 2px 5px !important;
+    .about-container {
+        padding: 2.5rem 1.5rem;
+        gap: 2rem;
     }
 }
