@@ -282,9 +282,10 @@ nav a:hover {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
     border-radius: 8px;
-    margin-top: auto;
+    margin-top: 15px;
     border: 1px solid var(--border-color);
     transition: opacity 0.3s ease;
 }
@@ -339,7 +340,8 @@ nav a:hover {
     padding: 6rem 10%;
     border-top: 1px solid var(--border-color);
     background-color: var(--bg-main);
-    max-width: 900px;
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
 }
 
