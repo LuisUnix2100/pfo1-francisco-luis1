@@ -3,21 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Desarrollo y Sistemas</title>
-    <!-- Google Fonts: Orbitron & Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
-    <!-- Hoja de estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <title>F.L.B. - Portafolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <!-- ==========================================
-       HEADER Y NAVEGACIÓN
-       ========================================== -->
+    <!-- Encabezado / Navegación -->
     <header>
-        <div class="logo">PORTFOLIO</div>
+        <div class="logo">F.L.B.</div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -29,162 +22,148 @@
         </nav>
     </header>
 
-    <!-- ==========================================
-       SECCIÓN HERO (INICIO)
-       ========================================== -->
-    <section id="inicio" class="hero">
-        <div class="hero-content-wrapper">
-            <div class="hero-avatar-box">
-                <img src="img/avatar.jpg" alt="Foto de perfil" class="hero-avatar">
+    <main>
+        <!-- Sección Hero (Presentación principal con foto de perfil optimizada) -->
+        <section id="inicio" class="hero">
+            <div class="hero-content-wrapper">
+                <div class="hero-avatar-box">
+                    <img src="img/Perfil2.PNG" alt="Francisco Luis Bronzi" class="hero-avatar">
+                </div>
+                
+                <div class="hero-text-box">
+                    <h1>Francisco Luis</h1>
+                    <h1 class="bronzi-title">Bronzi</h1>
+                    
+                    <h2>Desarrollador de Software & Web</h2>
+                    <p>Portafolio personal de mi perfil, habilidades y proyectos tecnológicos.</p>
+                    <a href="https://github.com/LuisUnix2100" target="_blank" class="btn-neon">Mi GitHub</a>
+                </div>
             </div>
-            <div class="hero-text-box">
-                <h1>Hola, soy</h1>
-                <span class="bronzi-title">Tu Nombre</span>
-                <h2>Desarrollador de Software & Sistemas</h2>
-                <p>Construyendo soluciones tecnológicas eficientes, aplicaciones de escritorio y sistemas móviles con enfoque ágil.</p>
-                <a href="#proyectos" class="btn-neon">Ver Proyectos</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==========================================
-       SECCIÓN SOBRE MÍ
-       ========================================== -->
-    <section id="sobre-mi" class="about-section">
-        <h2 class="section-title">Sobre Mí</h2>
-        <div class="about-container">
-            <div class="about-img-box">
-                <img src="img/about.jpg" alt="Espacio de trabajo o foto personal">
+        <!-- Sección "Sobre mí" -->
+        <section id="sobre-mi" class="about-section">
+            <div class="about-container">
+                <div class="about-img-box">
+                    <img src="img/futurista.jpg" alt="Representación visual de administración de sistemas y tecnología futurista">
+                </div>
+                <div class="about-text-box">
+                    <h2>Sobre mí</h2>
+                    <h3>Arquitectura, sistemas y desarrollo web</h3>
+                    <p>Soy desarrollador de software con una sólida trayectoria en administración de sistemas, entornos Unix, bases de datos Oracle e instalación de servidores.</p>
+                    <p>Actualmente, soy estudiante de la <strong>Tecnicatura Superior en Desarrollo de Software</strong> en el <strong>IFTS 29</strong> de la Ciudad Autónoma de Buenos Aires.</p>
+                    <p>Disfruto combinar mi experiencia técnica con las nuevas tecnologías web, enfocándome en el desarrollo frontend y el diseño de interfaces modernas, limpias y eficientes para ofrecer una gran experiencia de usuario.</p>
+                </div>
             </div>
-            <div class="about-text-box">
-                <h2>Pasión por el código y la tecnología</h2>
-                <h3>Estudiante de desarrollo de sistemas y software</h3>
-                <p>Me especializo en el diseño y maquetación de aplicaciones multiplataforma, bases de datos relacionales y optimización de infraestructura informática.</p>
-                <p>Disfruto resolviendo problemas complejos de lógica, estructurando proyectos en equipo y aplicando metodologías ágiles.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       SECCIÓN PROYECTOS (Tarjetas)
-       ========================================== -->
-    <section id="proyectos" class="projects-section">
-        <h2 class="section-title">Mis Proyectos</h2>
-        <div class="grid-container">
-            
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <div>
+        </section>
+        
+        <!-- Sección Proyectos -->
+        <section id="proyectos" class="projects-section">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="grid-container">
+                
+                <!-- Proyecto 1: Consorcio (C#) -->
+                <div class="card">
                     <h3>Gestión Consorcio</h3>
                     <p>Aplicación de escritorio en C# con base de datos MySQL.</p>
+                    <img src="img/consorcio-menu.jpg" alt="Menú principal del sistema de gestión de consorcio" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/consorcio.png" alt="Menú principal del sistema de gestión de consorcio">
-            </div>
 
-            <!-- Tarjeta 2 -->
-            <div class="card">
-                <div>
+                <!-- Proyecto 2: Clínica SePrice -->
+                <div class="card">
                     <h3>Clínica SePrice</h3>
                     <p>Sistema de gestión clínica y planificación ágil de sprints.</p>
+                    <img src="img/clinica-menu.jpg" alt="Menú principal de la clínica SePrice" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/clinica.png" alt="Menú principal de la clínica SePrice">
-            </div>
 
-            <!-- Tarjeta 3 -->
-            <div class="card">
-                <div>
+                <!-- Proyecto 3: Club Deportivo (C#) -->
+                <div class="card">
                     <h3>Club Deportivo (C#)</h3>
                     <p>Aplicación de escritorio desarrollada en C# para la administración integral del club.</p>
+                    <img src="img/club deportivo-menu.jpg" alt="Menú de la aplicación del club deportivo en C#" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/club-csharp.png" alt="Menú de la aplicación del club deportivo en C#">
-            </div>
 
-            <!-- Tarjeta 4 -->
-            <div class="card">
-                <div>
+                <!-- Proyecto 4: Club Deportivo (Kotlin) -->
+                <div class="card">
                     <h3>Club Deportivo (Kotlin)</h3>
                     <p>Estructura lógica y diseño móvil desarrollada con Kotlin y SQLite.</p>
+                    <img src="img/kotlin-app.jpg" alt="Captura de la aplicación móvil del club en Kotlin" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/club-kotlin.png" alt="Interfaz de la app móvil del club deportivo en Kotlin">
-            </div>
 
-            <!-- Tarjeta 5 -->
-            <div class="card">
-                <div>
+                <!-- Proyecto 5: Juego Quini 6 -->
+                <div class="card">
                     <h3>Juego Quini 6</h3>
                     <p>Simulador interactivo del tradicional juego de azar con lógica de validación de apuestas y sorteo.</p>
+                    <img src="img/quini6.jpg" alt="Captura del juego Quini 6" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/quini6.png" alt="Simulador interactivo del juego Quini 6">
-            </div>
 
-            <!-- Tarjeta 6 -->
-            <div class="card">
-                <div>
+                <!-- Proyecto 6: Servidores -->
+                <div class="card">
                     <h3>Instalación de Servidores</h3>
                     <p>Montaje de infraestructura de servidores y cableado estructurado categoría 5 y 6.</p>
+                    <img src="img/cableado-redes.jpg" alt="Infraestructura de servidores y cableado estructurado" style="width: 100%; border-radius: 8px; margin-top: 10px;">
                 </div>
-                <img src="img/servidores.png" alt="Infraestructura de servidores y cableado estructurado">
+
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- ==========================================
-       SECCIÓN HABILIDADES
-       ========================================== -->
-    <section id="habilidades" class="skills-section">
-        <h2 class="section-title">Habilidades Técnicas</h2>
-        <div class="skills-grid">
-            <div class="skill-card">C# / .NET</div>
-            <div class="skill-card">Kotlin / Android</div>
-            <div class="skill-card">MySQL / SQLite</div>
-            <div class="skill-card">HTML5 & CSS3</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Git / GitHub</div>
-            <div class="skill-card">Selenium / Testing</div>
-            <div class="skill-card">Redes y Servidores</div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       SECCIÓN CONTACTO
-       ========================================== -->
-    <section id="contacto" class="contact-section">
-        <h2 class="section-title">Contacto</h2>
-        <p class="contact-subtitle">¿Tenés alguna consulta o algún proyecto? Envíame un mensaje y responderé a la brevedad.</p>
-        
-        <form class="contact-form" action="#" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre y Apellido *</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Perez" required>
+        <!-- Sección Habilidades -->
+        <section id="habilidades" class="skills-section">
+            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML5 & CSS3</div>
+                <div class="skill-card">Git & GitHub</div>
+                <div class="skill-card">C# & MySQL</div>
+                <div class="skill-card">Kotlin</div>
+                <div class="skill-card">Unix & Shell Script</div>
+                <div class="skill-card">Instalación y actualización de servidores</div>
             </div>
+        </section>
 
-            <div class="form-group">
-                <label for="email">Correo Electrónico *</label>
-                <input type="email" id="email" name="email" placeholder="juan@correo.com" required>
-            </div>
+        <!-- Sección Contacto -->
+        <section id="contacto" class="contact-section">
+            <h2 class="section-title">Contacto</h2>
+            <p class="contact-subtitle">¿Tenés alguna consulta o algún proyecto? Enviame un mensaje y responderé a la brevedad.</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre y Apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Perez" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="juanperez@ejemplo.com" required>
+                </div>
 
-            <div class="form-group">
-                <label for="mensaje">Mensaje *</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo">
+                        <option value="laboral">Oportunidad laboral</option>
+                        <option value="tecnica">Consulta técnica e Instalación Servidores</option>
+                        <option value="proyecto">Propuesta de proyecto</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
 
-            <button type="submit" class="btn-neon">Enviar Mensaje</button>
-        </form>
-    </section>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribí aquí los detalles de tu consulta..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-neon">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
 
-    <!-- ==========================================
-       FOOTER
-       ========================================== -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-left">
-            <span class="footer-logo">PORTFOLIO</span>
-            <p>&copy; 2026 - Todos los derechos reservados.</p>
+            <span class="footer-logo">&lt;F.L.B./&gt;</span>
+            <p>&copy; 2026 Francisco Luis Bronzi. Todos los derechos reservados.</p>
         </div>
         <div class="footer-right">
-            <a href="#inicio">Volver arriba</a>
-            <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/LuisUnix2100" target="_blank">GitHub</a>
+            <a href="#inicio" class="volver-arriba">Volver arriba &uarr;</a>
         </div>
     </footer>
 
